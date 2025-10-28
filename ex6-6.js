@@ -1,4 +1,4 @@
-function sayhello65() {alert("こんにちは！");}
+function sayhello66() {alert("hello！");}
 function showMessage(name) {alert(name + "が来た");}
-function taro65() {showMessage("太郎");}
-function hanako65() {showMessage("花子");}
+function taro66() {showMessage("太郎");}
+function hanako66() {showMessage("花子");}
