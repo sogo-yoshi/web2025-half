@@ -1,3 +1,2 @@
-var who67 = 'world';
-function sayhello67(){alert('Hello,' + who67 + '!');}
-function someone(x){wyo67=x;}
+var who67 = 'world';function sayhello67() {alert('Hello, ' + who67 + '!');}
+function someone(x) {who67 = x;}
