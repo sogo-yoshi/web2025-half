@@ -1,0 +1,32 @@
+body {
+  font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "メイリオ", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: #222;
+}
+
+.photo-container {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-container img {
+  width: 320px;     
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.controls button {
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
