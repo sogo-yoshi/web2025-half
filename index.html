@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="imagechange.css">
 <script src="ex6-14.js" defer></script>
 <link rel="stylesheet" href="style.css">
+<script src="ex06-15.js"></script>
 </head>
 <body>
 
@@ -122,7 +123,7 @@
     <input type="button" value="元に戻す" onclick="imgReset1();">
   </div>
 
-<h1>練習問題6-13</h1>
+<h1>練習問題6-14</h1>
 <section>
     <h2>自己紹介</h2>
     <p>こんにちは。私は城西大学でweb開発の勉強をしている一年生です</p>
@@ -131,11 +132,17 @@
   <div id="photoDiv" class="photo-container">
     <img id="photo" src="./image/egao.jpg" alt="笑顔の写真">
   </div>
-
-
+  
   <div class="controls">
     <button type="button" onclick="changeToSecond();">写真を変更</button>
     <button type="button" onclick="resetToFirst();">元に戻す</button>
   </div>
+
+<form name="timer">
+  <input type="button" value="スタート" onclick="startfnc()">
+  <br>
+  <input type="text" name="moji" size="30" value="">
+</form>
+  
 </body>
 </html>
