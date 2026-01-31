@@ -167,6 +167,15 @@
 <br>
 <input type="button" value="画像切り替え" onclick="changeImg()">
 
+<script>
+function changeImg() {
+  document.getElementById("bananaPhoto").src = "image/banana_peel.png";
+
+  setTimeout(function () {
+    document.getElementById("bananaPhoto").src = "image/banana.png";
+  }, 3000);
+}
+</script>
 
 <h1>練習問題7-1</h1>
 <p>誰？ <input type="text" id="who71"></p>
