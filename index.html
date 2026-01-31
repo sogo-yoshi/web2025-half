@@ -167,6 +167,195 @@
 <img src="image/banana.png" name="photo" width="200">
 <br>
 <input type="button" value="画像切り替え" onclick="changeImg()">
-  
+
+
+<h1>練習問題7-1</h1>
+<p>誰？ <input type="text" id="who71"></p>
+<input type="button" value="あいさつ" onclick="sayhello71();">
+
+<script>
+function sayhello71() {
+  alert("Hello, " + document.getElementById("who71").value + "!");
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-2</h1>
+<input type="text" id="input1"> +
+<input type="text" id="input2">
+<input type="button" value="計算" onclick="add();">
+
+<script>
+function add() {
+  var x = Number(document.getElementById("input1").value);
+  var y = Number(document.getElementById("input2").value);
+  alert(x + y);
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-3（BMI計算）</h1>
+身長(m)：<input type="text" id="height">
+体重(kg)：<input type="text" id="weight">
+<input type="button" value="計算" onclick="bmi();">
+
+<script>
+function bmi() {
+  var h = Number(document.getElementById("height").value);
+  var w = Number(document.getElementById("weight").value);
+  var bmi = w / (h * h);
+  alert("BMI = " + bmi.toFixed(2));
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-4</h1>
+<p>目を閉じてないと見られないものはなーに？</p>
+答：<input type="text" id="answer74">
+<input type="button" value="解答" onclick="nazo74();">
+
+<script>
+function nazo74() {
+  if (document.getElementById("answer74").value == "夢") {
+    alert("あたり！");
+  }
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-5</h1>
+答：<input type="text" id="answer75">
+<input type="button" value="解答" onclick="nazo75();">
+
+<script>
+function nazo75() {
+  if (document.getElementById("answer75").value == "夢") {
+    alert("あたり！");
+  } else {
+    alert("はずれ！");
+  }
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-6</h1>
+答：<input type="text" id="answer76">
+<input type="button" value="解答" onclick="nazo76();">
+
+<script>
+function nazo76() {
+  if (document.getElementById("answer76").value != "夢") {
+    alert("あたり！");
+  } else {
+    alert("はずれ！");
+  }
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-7</h1>
+答：<input type="text" id="answer77">
+<input type="button" value="解答" onclick="nazo77();">
+
+<script>
+function nazo77() {
+  if (document.getElementById("answer77").value = "夢") {
+    alert("あたり！");
+  } else {
+    alert("はずれ！");
+  }
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-8</h1>
+答：<input type="text" id="answer78">
+<input type="button" value="解答" onclick="nazo78();">
+
+<script>
+function nazo78() {
+  if (document.getElementById("answer78").value == "夢") {
+    alert("あたり！");
+  } else {
+    alert("はずれ！");
+  }
+}
+</script>
+
+<hr>
+
+
+<h1>練習問題7-9</h1>
+答：<input type="text" id="answer79">
+<input type="button" value="解答" onclick="nazo79();">
+
+<script>
+function nazo79() {
+  var a = document.getElementById("answer79").value;
+  if (a == "夢") {
+    alert("あたり！");
+  } else if (a == "ゆめ") {
+    alert("あたり！");
+  } else {
+    alert("はずれ！");
+  }
+}
+</script>
+
+<hr>
+
+<h1>練習問題7-10</h1>
+身長(m)：<input type="text" id="h10">
+体重(kg)：<input type="text" id="w10">
+<input type="button" value="判定" onclick="bmi10();">
+
+<script>
+function bmi10() {
+  var h = Number(document.getElementById("h10").value);
+  var w = Number(document.getElementById("w10").value);
+  var bmi = w / (h * h);
+
+  if (bmi < 18.5) {
+    alert("低体重");
+  } else if (bmi < 25) {
+    alert("普通");
+  } else {
+    alert("肥満");
+  }
+}
+</script>
+
+<hr>
+
+<h1>練習問題7-11</h1>
+西暦：<input type="text" id="year">
+<input type="button" value="判定" onclick="leap();">
+
+<script>
+function leap() {
+  var y = Number(document.getElementById("year").value);
+
+  if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0)) {
+    alert("うるう年です");
+  } else {
+    alert("平年です");
+  }
+}
+</script>
+
 </body>
 </html>
